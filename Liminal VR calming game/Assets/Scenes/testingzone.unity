@@ -197,7 +197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bubble: {fileID: 1953316129331892470, guid: 5cb38aa6560573c47b4899e6650fe79e, type: 3}
-  spawnTimer: 1
+  spawnTimer: 2
   spawnDelay: 2
   deathtimer: 0
 --- !u!4 &334635419
@@ -327,8 +327,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bubble: {fileID: 1953316129331892470, guid: 5cb38aa6560573c47b4899e6650fe79e, type: 3}
-  spawnTimer: 0.3
-  spawnDelay: 0.8
+  spawnTimer: 1.63
+  spawnDelay: 1.67
   deathtimer: 0
 --- !u!4 &464493695
 Transform:
@@ -421,8 +421,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bubble: {fileID: 1953316129331892470, guid: 5cb38aa6560573c47b4899e6650fe79e, type: 3}
-  spawnTimer: 0.5
-  spawnDelay: 0.4
+  spawnTimer: 1.2
+  spawnDelay: 1.2
   deathtimer: 0
 --- !u!4 &1510684021
 Transform:
@@ -468,7 +468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bubble: {fileID: 1953316129331892470, guid: 5cb38aa6560573c47b4899e6650fe79e, type: 3}
-  spawnTimer: 0.2
+  spawnTimer: 1
   spawnDelay: 2
   deathtimer: 0
 --- !u!4 &1545652040
