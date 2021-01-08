@@ -6,6 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/testingzone.unity
-    guid: 1ec6feada6df2a245a28797a19928b6f
-  m_configObjects: {}
+    path: Assets/Scenes/Underwater_FX.unity
+    guid: 2de00dbfef043754dab36eedb0b705f3
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 6fbfe880af24ce247b6a18ef88a4e83e,
+      type: 2}
