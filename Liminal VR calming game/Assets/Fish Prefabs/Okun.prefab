@@ -325,6 +325,8 @@ GameObject:
   m_Component:
   - component: {fileID: 423228}
   - component: {fileID: 9553262}
+  - component: {fileID: 8412102372426457762}
+  - component: {fileID: 9068423424696777511}
   m_Layer: 0
   m_Name: Okun
   m_TagString: Untagged
@@ -341,7 +343,7 @@ Transform:
   m_GameObject: {fileID: 138624}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 9.86228, y: 1.07, z: -0.21965964}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 436922}
   - {fileID: 488006}
@@ -367,6 +369,33 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &8412102372426457762
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138624}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3636307, y: 2.057904, z: 4.091393}
+  m_Center: {x: -0.0737077, y: 0.3428014, z: -0.09313066}
+--- !u!114 &9068423424696777511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a12e1002b01cda45aff040dd4c171e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  newGoalPos: {x: 0, y: 0, z: 0}
 --- !u!1 &140424
 GameObject:
   m_ObjectHideFlags: 0

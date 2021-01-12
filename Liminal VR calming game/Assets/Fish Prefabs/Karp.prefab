@@ -381,6 +381,8 @@ GameObject:
   m_Component:
   - component: {fileID: 463490}
   - component: {fileID: 9568810}
+  - component: {fileID: -8729896593284237006}
+  - component: {fileID: 929222368571159826}
   m_Layer: 0
   m_Name: Karp
   m_TagString: Untagged
@@ -397,7 +399,7 @@ Transform:
   m_GameObject: {fileID: 155006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.01, y: 1.43, z: -0.33648157}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 485758}
   - {fileID: 485340}
@@ -423,6 +425,33 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &-8729896593284237006
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155006}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0510674, y: 3.3054101, z: 6.406787}
+  m_Center: {x: -0.11602719, y: 0.28886178, z: -0.06889681}
+--- !u!114 &929222368571159826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a12e1002b01cda45aff040dd4c171e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  newGoalPos: {x: 0, y: 0, z: 0}
 --- !u!1 &156054
 GameObject:
   m_ObjectHideFlags: 0
