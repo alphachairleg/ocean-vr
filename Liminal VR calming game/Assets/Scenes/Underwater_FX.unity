@@ -55169,7 +55169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dee034ad5278d984489ab02cfb06681d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnDegPerSec: 1000
+  turnDegPerSec: 9858
   localAxis: {x: 0, y: 0.1, z: 1}
 --- !u!23 &834142997
 MeshRenderer:
@@ -95561,6 +95561,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 499232570}
     m_Modifications:
+    - target: {fileID: 195418, guid: ba1fa4a8c66106b4988c88fe4b8e8502, type: 3}
+      propertyPath: m_Name
+      value: CustomHandRight
+      objectReference: {fileID: 0}
     - target: {fileID: -2535137252819607114, guid: ba1fa4a8c66106b4988c88fe4b8e8502,
         type: 3}
       propertyPath: clip
@@ -95586,10 +95590,6 @@ PrefabInstance:
         type: 3}
       propertyPath: shootForce
       value: 1400
-      objectReference: {fileID: 0}
-    - target: {fileID: 195418, guid: ba1fa4a8c66106b4988c88fe4b8e8502, type: 3}
-      propertyPath: m_Name
-      value: CustomHandRight
       objectReference: {fileID: 0}
     - target: {fileID: 422740, guid: ba1fa4a8c66106b4988c88fe4b8e8502, type: 3}
       propertyPath: m_LocalPosition.x
