@@ -15,6 +15,8 @@ ScriptsOnlyBuild:
     - OvrAvatarSettings
     - Raycast
     - ScrollUV_Caustics
+    - Shoot
+    - Spin
     - bubblespawnrer
     - destroy
     - physics
@@ -26,7 +28,6 @@ ScriptsOnlyBuild:
     Oculus.VR.dll:
     - OVRCameraRig
     - OVRDebugInfo
-    - OVRGrabbable
     - OVRGrabber
     - OVRHeadsetEmulator
     - OVRManager
@@ -36,21 +37,8 @@ ScriptsOnlyBuild:
     - OVRScreenFade
     - UnityEngine.EventSystems.OVRInputModule
     Unity.Postprocessing.Runtime.dll:
-    - UnityEngine.Rendering.PostProcessing.AmbientOcclusion
-    - UnityEngine.Rendering.PostProcessing.AutoExposure
-    - UnityEngine.Rendering.PostProcessing.Bloom
-    - UnityEngine.Rendering.PostProcessing.ChromaticAberration
-    - UnityEngine.Rendering.PostProcessing.ColorGrading
-    - UnityEngine.Rendering.PostProcessing.DepthOfField
-    - UnityEngine.Rendering.PostProcessing.Grain
-    - UnityEngine.Rendering.PostProcessing.LensDistortion
-    - UnityEngine.Rendering.PostProcessing.MotionBlur
     - UnityEngine.Rendering.PostProcessing.PostProcessLayer
-    - UnityEngine.Rendering.PostProcessing.PostProcessProfile
     - UnityEngine.Rendering.PostProcessing.PostProcessResources
-    - UnityEngine.Rendering.PostProcessing.PostProcessVolume
-    - UnityEngine.Rendering.PostProcessing.ScreenSpaceReflections
-    - UnityEngine.Rendering.PostProcessing.Vignette
     Unity.XR.Management.Editor.dll:
     - UnityEditor.XR.Management.XRGeneralSettingsPerBuildTarget
     Unity.XR.Management.dll:
@@ -130,8 +118,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9556}
     - Class: 114
-      Script: {instanceID: 9582}
-    - Class: 114
       Script: {instanceID: 9654}
     - Class: 114
       Script: {instanceID: 9690}
@@ -153,8 +139,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 9840}
     - Class: 114
       Script: {instanceID: 9994}
-    - Class: 114
-      Script: {instanceID: 10016}
     - Class: 114
       Script: {instanceID: 10092}
     - Class: 114
@@ -182,8 +166,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10798}
     - Class: 114
-      Script: {instanceID: 10800}
-    - Class: 114
       Script: {instanceID: 10924}
     - Class: 114
       Script: {instanceID: 10990}
@@ -202,11 +184,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11548}
     - Class: 114
-      Script: {instanceID: 11762}
+      Script: {instanceID: 11644}
     - Class: 114
       Script: {instanceID: 11808}
     - Class: 114
       Script: {instanceID: 11908}
+    - Class: 114
+      Script: {instanceID: 76090}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -2260,6 +2244,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 66bca5cc6a18c5298ec75235e56a84d6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OrbitAroundTarget
+  - hash:
+      serializedVersion: 2
+      Hash: b6297c1e7d5f3d8ebbf26ad5cbc028ec
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Shoot
   platform: 13
   scenePathNames:
   - Assets/Scenes/Underwater_FX.unity

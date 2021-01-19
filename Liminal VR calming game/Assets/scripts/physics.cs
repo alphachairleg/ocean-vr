@@ -25,10 +25,10 @@ public class physics : MonoBehaviour
     void FixedUpdate()
     {
         Timer++;
-        if (thrust == 1)
+        /*if (thrust == 1)
         {
             rb.AddForce(0, thrust, 0, ForceMode.Impulse);
-        }
+        }*/
 
         if (bubbleleft == true)
         {

@@ -9,10 +9,10 @@ public class Raycast : MonoBehaviour
         public Transform pointerTransform; void Update()
 
         {
-            if (OVRInput.Get(OVRInput.Button.SecondaryHandTrigger))
+            /*if (OVRInput.Get(OVRInput.Button.SecondaryHandTrigger))
             {
                 RaycastDirection();
-            }
+            }*/
             if (OVRInput.Get(OVRInput.Button.PrimaryHandTrigger))
             {
                 RaycastDirection();
@@ -31,5 +31,14 @@ public class Raycast : MonoBehaviour
                 }
             }
         }
+        void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject.CompareTag("Bubble"))
+            {
+                other.gameObject.SetActive(false);
+            }
+        }
+
+
     }
 }
