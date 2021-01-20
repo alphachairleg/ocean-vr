@@ -35294,6 +35294,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 457102391}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &464746260 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100004, guid: ce816f2e6abb0504092c23ed9b970dfd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1962536422}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &464746261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464746260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6231ffc1d9f53b346b75484915a03ba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &482639672
 GameObject:
   m_ObjectHideFlags: 0
@@ -60399,6 +60417,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CustomHandLeft
       objectReference: {fileID: 0}
+    - target: {fileID: 143668, guid: e6ba3498ffa1e534b91a07264266e6b8, type: 3}
+      propertyPath: m_TagString
+      value: Hand
+      objectReference: {fileID: 0}
     - target: {fileID: 414912, guid: e6ba3498ffa1e534b91a07264266e6b8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -60451,6 +60473,10 @@ PrefabInstance:
       propertyPath: m_player
       value: 
       objectReference: {fileID: 71970500}
+    - target: {fileID: 1367450344401422, guid: e6ba3498ffa1e534b91a07264266e6b8, type: 3}
+      propertyPath: m_TagString
+      value: Hand
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6ba3498ffa1e534b91a07264266e6b8, type: 3}
 --- !u!1 &1010001053
@@ -71095,7 +71121,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1962536422}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 464746260}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: df9f338034892c44ebb62d97894772f1, type: 3}
@@ -100705,24 +100731,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 85.105, y: 66.438, z: 117.66601}
---- !u!1 &1673850840 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 143668, guid: e6ba3498ffa1e534b91a07264266e6b8,
-    type: 3}
-  m_PrefabInstance: {fileID: 1008018900}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1673850842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1673850840}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6231ffc1d9f53b346b75484915a03ba1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1779516378
 GameObject:
   m_ObjectHideFlags: 0
@@ -115864,7 +115872,8 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7748306163811858140, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
 --- !u!20 &1962536423 stripped
 Camera:

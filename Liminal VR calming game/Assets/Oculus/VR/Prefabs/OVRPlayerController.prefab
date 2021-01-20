@@ -164,6 +164,7 @@ GameObject:
   - component: {fileID: 400006}
   - component: {fileID: 14300000}
   - component: {fileID: 11400010}
+  - component: {fileID: 7748306163811858140}
   - component: {fileID: 11462408}
   - component: {fileID: 11493974}
   m_Layer: 0
@@ -234,6 +235,18 @@ MonoBehaviour:
   EnableLinearMovement: 1
   EnableRotation: 1
   RotationEitherThumbstick: 0
+--- !u!114 &7748306163811858140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6231ffc1d9f53b346b75484915a03ba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11462408
 MonoBehaviour:
   m_ObjectHideFlags: 0
