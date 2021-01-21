@@ -329,7 +329,7 @@ GameObject:
   - component: {fileID: 9068423424696777511}
   m_Layer: 0
   m_Name: Okun
-  m_TagString: Untagged
+  m_TagString: Fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -380,8 +380,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.3636307, y: 2.057904, z: 4.091393}
-  m_Center: {x: -0.0737077, y: 0.3428014, z: -0.09313066}
+  m_Size: {x: 0.6975905, y: 1.2132746, z: 3.5231175}
+  m_Center: {x: -0.024825731, y: 0.30769753, z: 0.03473083}
 --- !u!114 &9068423424696777511
 MonoBehaviour:
   m_ObjectHideFlags: 0

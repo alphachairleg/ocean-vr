@@ -118,7 +118,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 166183764144725025}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1cc6cf1a48256ef4caa0ce1fc3d73f14, type: 3}
   m_Name: 
@@ -136,6 +136,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Deathtimer: 10
+  bubblePop: {fileID: 4735499793402137683, guid: 7940e45b95b1e6845a43b206639186d4,
+    type: 3}
 --- !u!114 &166183764144725024
 MonoBehaviour:
   m_ObjectHideFlags: 0

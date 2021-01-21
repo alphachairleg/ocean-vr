@@ -385,7 +385,7 @@ GameObject:
   - component: {fileID: 929222368571159826}
   m_Layer: 0
   m_Name: Karp
-  m_TagString: Untagged
+  m_TagString: Fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -436,8 +436,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.0510674, y: 3.3054101, z: 6.406787}
-  m_Center: {x: -0.11602719, y: 0.28886178, z: -0.06889681}
+  m_Size: {x: 1.1263505, y: 2.0539358, z: 5.3517704}
+  m_Center: {x: -0.06638725, y: 0.36394575, z: 0.2875799}
 --- !u!114 &929222368571159826
 MonoBehaviour:
   m_ObjectHideFlags: 0

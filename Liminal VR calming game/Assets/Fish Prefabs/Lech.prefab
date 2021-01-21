@@ -732,7 +732,7 @@ GameObject:
   - component: {fileID: 6829611383606366416}
   m_Layer: 0
   m_Name: Lech
-  m_TagString: Untagged
+  m_TagString: Fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -783,8 +783,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.9605318, y: 2.622207, z: 5.0540047}
-  m_Center: {x: -0.08475304, y: 0.29439092, z: -0.51557934}
+  m_Size: {x: 0.8382036, y: 1.5079541, z: 3.689629}
+  m_Center: {x: -0.014161964, y: 0.30059475, z: -0.45788407}
 --- !u!114 &6829611383606366416
 MonoBehaviour:
   m_ObjectHideFlags: 0

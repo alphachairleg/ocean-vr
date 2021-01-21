@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Bubble
   - Hand
+  - Ground
+  - Fish
   layers:
   - Default
   - TransparentFX

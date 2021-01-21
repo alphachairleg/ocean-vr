@@ -31,7 +31,7 @@ public class Shoot : MonoBehaviour
         if(OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger))
         {
             //Audio play
-            audioSource.Play();
+            //audioSource.Play();
             
             //Bubble fire rate
             if(Time.time > shootRateTimeStamp)
@@ -43,6 +43,8 @@ public class Shoot : MonoBehaviour
             }
 
         }
+
+        //Bubble gun audio
         if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger) == true)
         {
             //Audio play

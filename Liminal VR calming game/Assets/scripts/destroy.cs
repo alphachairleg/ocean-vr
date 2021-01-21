@@ -6,7 +6,9 @@ public class destroy : MonoBehaviour
 {
     public float Deathtimer = 8f;
     // var remains: GameObject;
-    // Start is called before the first frame update
+
+
+    public ParticleSystem bubblePop;
     void Start()
     {
        
@@ -20,8 +22,9 @@ public class destroy : MonoBehaviour
             Deathtimer -= Time.deltaTime;
             if (Deathtimer <= 0)
             {
-                Kill();
-                killsmall();
+                Destroy();
+                //Kill();
+                //killsmall();
             }
 
         }
@@ -31,17 +34,36 @@ public class destroy : MonoBehaviour
         //            Destroy(gameObject);
         //    }
     }
-    private void OnCollisionEnter(Collision col)
+    void OnTriggerEnter(Collider other)
     {
+        if (other.tag == "Hand" /*&& other.tag == "Ground" && other.tag == "Fish"*/)
+        {
 
+            Destroy();
+        }
+        else if (other.gameObject.tag == "Ground")
+        {
+            Destroy();
+        }
+        else if (other.gameObject.tag == "Fish")
+        {
+            Destroy();
+        }
     }
-    private void Kill()
+
+    /*private void Kill()
     {
-        Destroy(this.gameObject);
+        Destroy();
+    }*/
+
+    public void Destroy()
+    {
+        Instantiate(bubblePop, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
-    private void killsmall()
+    /*private void killsmall()
     {
 
         Destroy(gameObject);
-    }
+    }*/
 }
