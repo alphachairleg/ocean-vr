@@ -8,7 +8,7 @@ public class IgnoreTagCollider : MonoBehaviour
     {
         if (collision.gameObject.tag == "Bubble")
         {
-           Physics.IgnoreCollision(Bubble.collider, collider);
+          // Physics.IgnoreCollision(Bubble.collider, collider);
         }
 
         //Freeze rotation

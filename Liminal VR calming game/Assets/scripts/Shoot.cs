@@ -24,6 +24,11 @@ public class Shoot : MonoBehaviour
         rbody = GetComponent<Rigidbody>();
     }
 
+    void Awake()
+    {
+        AudioSource[] audios = gameObject.GetComponents<AudioSource>();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -32,9 +37,10 @@ public class Shoot : MonoBehaviour
         {
             //Audio play
             //audioSource.Play();
-            
+            Debug.Log("player bubble sound");
+
             //Bubble fire rate
-            if(Time.time > shootRateTimeStamp)
+            if (Time.time > shootRateTimeStamp)
             {
                 GameObject go = (GameObject)Instantiate(
                     bullet, gun.position, gun.rotation);
@@ -45,17 +51,18 @@ public class Shoot : MonoBehaviour
         }
 
         //Bubble gun audio
-        if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger) == true)
-        {
-            //Audio play
-            audioSource.Play();
-        }
-        if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger) == false)
-        {
-            //Audio play
-            audioSource.Pause ();
-        }
+        if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger))
+         {
+             //Audio play
+             audioSource.Play();
+
+         }
+         if (OVRInput.GetUp(OVRInput.Button.SecondaryIndexTrigger))
+         {
+             //Audio play
+             audioSource.Pause ();
+         }
     }
 
-   
+
 }

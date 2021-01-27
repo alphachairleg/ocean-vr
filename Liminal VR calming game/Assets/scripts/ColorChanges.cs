@@ -10,6 +10,10 @@ public class ColorChanges : MonoBehaviour
 
     [SerializeField] Color[] myColours;
 
+    public GameObject HugePopLight;
+    public GameObject HugePopLight2;
+    public ParticleSystem HugePop;
+
     float t = 0f;
     int colorIndex = 0;
     int len;
@@ -29,12 +33,11 @@ public class ColorChanges : MonoBehaviour
     //================UPDATE=================
     void Update()
     {
-        if (hp <= 25)
+        if (hp <= 50)
         {
 
             //changes the colour of the material slowly over time
             sphereMeshRenderer.material.color = Color.Lerp(sphereMeshRenderer.material.color, myColours[colorIndex], lerpTime * Time.deltaTime);
-
             t = Mathf.Lerp(t, 1f, lerpTime * Time.deltaTime);
 
             if (t > .9f)
@@ -47,6 +50,22 @@ public class ColorChanges : MonoBehaviour
                 colorIndex = (colorIndex >= len) ? 0 : colorIndex;
             }
         }
+
+        /* if (hp <= 1)
+         {
+             HugePopLight.GetComponent<EnviromentLightChanges>().changeColors = true;
+             HugePopLight2.GetComponent<EnviromentLightChanges>().changeColors = true;
+         }*/
+
+        if (hp <= 0)
+        {
+            Instantiate(HugePop, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+            Debug.Log("pooooooooooooooop");
+
+            HugePopLight.GetComponent<EnviromentLightChanges>().changeColors = true;
+            HugePopLight2.GetComponent<EnviromentLightChanges>().changeColors = true;
+        }
     }
 
     void OnTriggerEnter(Collider collider)
@@ -56,6 +75,18 @@ public class ColorChanges : MonoBehaviour
             hp -= 1;
             Debug.Log("hp -1");
         }
+
+        /*if (hp <= 0)
+        {
+            Instantiate(HugePop, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+            Debug.Log("pooooooooooooooop");
+
+            HugePopLight.GetComponent<EnviromentLightChanges>().changeColors = true;
+            HugePopLight2.GetComponent<EnviromentLightChanges>().changeColors = true;
+        }*/
     }
+
+
 
 }
