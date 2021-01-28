@@ -26,7 +26,9 @@ public class Flock : MonoBehaviour
 
         //Fishes start with with random speed between these numbers
         //speed = Random.Range(1f, 3);
+        
     }
+    
 
     void OnTriggerEnter(Collider other)
     {
