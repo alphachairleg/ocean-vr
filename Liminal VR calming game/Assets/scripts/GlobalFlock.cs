@@ -11,7 +11,7 @@ public class GlobalFlock : MonoBehaviour
     public GameObject goalPrefab;
 
     //Fishes spawn number
-    static int numFish = 30;
+    static int numFish = 20;
     public static GameObject[] allFish = new GameObject[numFish];
 
     public static Vector3 goalPos = Vector3.zero;
