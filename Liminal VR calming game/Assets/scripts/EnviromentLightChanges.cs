@@ -10,6 +10,7 @@ public class EnviromentLightChanges : MonoBehaviour
     public Color startColor;
     public Color endColor;
     public float startTime;
+    private float colourtimer;
 
     //public GameObject hugeBubble;
 
@@ -22,6 +23,9 @@ public class EnviromentLightChanges : MonoBehaviour
         GameObject hugeBubble = GameObject.Find("Bubble");
         ColorChanges playerScript = hugeBubble.GetComponent<ColorChanges>();
         //ColorChanges.hp;
+
+        colourtimer = 0;
+
     }
 
     // Update is called once per frame
@@ -30,9 +34,21 @@ public class EnviromentLightChanges : MonoBehaviour
        
        if (changeColors == true)
         {
-            float t = Time.time - startTime * colorSpeed;
+            float t = (Mathf.Sin(Time.time - startTime * colorSpeed));
             myLight.color = Color.Lerp(startColor, endColor, t);
+            //changeColors = false;
             Debug.Log("Lerp light");
+            colourtimer += Time.deltaTime;
+        }
+       
+        if (colourtimer >= 4)
+        {
+            changeColors = false;
+        }
+
+        if(changeColors == false)
+        {
+            colourtimer = 0;
         }
     }
 

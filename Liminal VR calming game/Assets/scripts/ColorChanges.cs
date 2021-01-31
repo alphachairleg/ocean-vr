@@ -33,7 +33,7 @@ public class ColorChanges : MonoBehaviour
     //================UPDATE=================
     void Update()
     {
-        if (hp <= 50)
+        if (hp <= 100)
         {
 
             //changes the colour of the material slowly over time
